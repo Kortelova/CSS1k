@@ -1,0 +1,107 @@
+body{
+	display:grid;
+	grid-template-areas:
+	"header header header header"
+	"nav article article none"
+	"footer footer footer footer";
+	grid-template-rows: 60px 1fr 60px;
+	grid-template-columns:25% 1fr 10% 7% ;
+    grid-gap: 20px;
+    height: 100vh;
+    margin: 0;
+    background:url("rose.jpg");
+    background-repeat: round;
+}
+#header {
+  grid-area: header;
+}
+#footer {
+  grid-area: footer;
+}
+#article {
+  grid-area: article;
+}
+#main_nav {
+  grid-area: nav;
+}
+.nav{
+	background-color:#ffece7;
+	border-radius:10px;
+}
+.nav h2{
+	text-align:center;
+	color:#cfa89b;
+}
+.nav ul{
+	list-style:none;
+}
+.nav li{
+	padding:5px 4px;
+}
+.nav a {
+	text-decoration:none;
+	color: black;
+}
+.nav li:hover{
+	font-family:cursive;
+	font-style:italic;
+	background-color:#cfa89b;
+	border:1px solid #c09789;
+	border-radius:10px;
+}
+.header{
+	text-align:center;
+	background-color:#aec2da;
+	opacity:0.75;
+	color: white;
+	font-family:Courier New, monospace;
+}
+.nav > ul{
+	height:700px;
+	overflow-y: scroll;	
+}
+/*::-webkit-scrollbar { 
+    display: none; 
+}*/
+.main {
+	background-color:white;
+	box-shadow:20px -10px 10px #aec2da ;
+	padding: 20px 50px;
+}
+.main  h2{
+	text-align:center;
+	font-family:cursive;
+	font-style:italic;
+	border:1px solid #9fb0ca;
+	color:#9fb0ca;
+}
+.main  h2  abbr{
+	color:#65758e;
+}
+.main a{
+	text-decoration:none;
+	font-family:cursive;
+	color:#111a9d;
+}
+.main section{
+	font-family:Courier New, monospace;
+}
+.main header{
+	font-family:Andale Mono, monospace;
+}
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #d5b7af; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #d5b7af; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}}
+::-webkit-resizer { background-color: #d5b7af;}
+.footer{
+	text-align:center;
+	background-color:#8585bb;
+	font-family:serif;
+	letter-spacing:2px;
+}
+.footer a{
+	color:#aec3da;
+}
